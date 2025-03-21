@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-21T08:45:56.253415" rpa="false" schemaversion="5">
+<suite id="s1" name="Test 1" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1">
+<suite id="s1-s1" name="Test" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\test.robot">
+<test id="s1-s1-t1" name="TC02" line="22">
+<kw name="Open Doppee" owner="keyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-21T08:45:56.523348" level="INFO">Opening browser 'edge' to base url 'https://training-platform.doppio-tech.com/login'.</msg>
+<arg>${url}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-21T08:45:56.523134" elapsed="2.613898"/>
+</kw>
+<arg>https://training-platform.doppio-tech.com/login</arg>
+<status status="PASS" start="2025-03-21T08:45:56.522368" elapsed="2.614968"/>
+</kw>
+<kw name="Input Information" owner="keyword">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-21T08:45:59.145583" level="INFO">Typing text 'tew78ww9@gmail.com' into text field '//input[@type="text"]'.</msg>
+<arg>//input[@type="text"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-21T08:45:59.144485" elapsed="0.248320"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-21T08:45:59.393268" level="INFO">Typing text 'Doppio123*' into text field '//input[@type="password"]'.</msg>
+<arg>//input[@type="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-21T08:45:59.393002" elapsed="0.112382"/>
+</kw>
+<arg>${tc002['email']}</arg>
+<arg>${tc002['password']}</arg>
+<status status="PASS" start="2025-03-21T08:45:59.139428" elapsed="0.366194"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-21T08:46:02.508219" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-21T08:45:59.507445" elapsed="3.000907"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-21T08:46:02.508824" elapsed="2.289907"/>
+</kw>
+<status status="PASS" start="2025-03-21T08:45:56.521567" elapsed="8.277615"/>
+</test>
+<status status="PASS" start="2025-03-21T08:45:56.284717" elapsed="8.515612"/>
+</suite>
+<suite id="s1-s2" name="Test if" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\Test_if.robot">
+<test id="s1-s2-t1" name="TC01: To Verify Open Doppee Website" line="55">
+<kw name="Reena">
+<if>
+<branch type="IF" condition="'${name}'=='Reena'">
+<if>
+<branch type="IF" condition="'${surname}'=='Baha'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is the real Reena</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-21T08:46:04.926392" elapsed="0.000032"/>
+</kw>
+<status status="NOT RUN" start="2025-03-21T08:46:04.926267" elapsed="0.000213"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is not real Reena</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-21T08:46:04.926606" elapsed="0.000028"/>
+</kw>
+<status status="NOT RUN" start="2025-03-21T08:46:04.926529" elapsed="0.000146"/>
+</branch>
+<status status="NOT RUN" start="2025-03-21T08:46:04.926252" elapsed="0.000457"/>
+</if>
+<status status="NOT RUN" start="2025-03-21T08:46:04.926083" elapsed="0.000650"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>KTAM Baby</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-21T08:46:04.926838" elapsed="0.000333"/>
+</kw>
+<status status="PASS" start="2025-03-21T08:46:04.926767" elapsed="0.000467"/>
+</branch>
+<status status="PASS" start="2025-03-21T08:46:04.926056" elapsed="0.001217"/>
+</if>
+<arg>Tao</arg>
+<arg>Williams</arg>
+<status status="PASS" start="2025-03-21T08:46:04.925793" elapsed="0.001539"/>
+</kw>
+<status status="PASS" start="2025-03-21T08:46:04.925055" elapsed="0.002523"/>
+</test>
+<status status="PASS" start="2025-03-21T08:46:04.801239" elapsed="0.127145"/>
+</suite>
+<status status="PASS" start="2025-03-21T08:45:56.255710" elapsed="8.673624"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test 1" id="s1" pass="2" fail="0" skip="0">Test 1</stat>
+<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Test 1.Test</stat>
+<stat name="Test if" id="s1-s2" pass="1" fail="0" skip="0">Test 1.Test if</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
