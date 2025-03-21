@@ -5,15 +5,15 @@ Resource    ${CURDIR}/keywords/keyword.robot
 
 
 ***Keywords***
-# Test If
-#     [Arguments]     ${text}
-#     IF  '${text}'=='Reena'
-#         Log To Console       Reena leading KTAM for another year
-#     ELSE IF     '${text}'=='Nilecon'
-#         Log To Console       Nilecon Mai Lerd
-#     ELSE
-#         Log To Console       Sawasdee wan jan
-#     END
+Test If
+    [Arguments]     ${text}
+    IF  '${text}'=='Reena'
+        Log To Console       Reena leading KTAM for another year
+    ELSE IF     '${text}'=='Nilecon'
+        Log To Console       Nilecon Mai Lerd
+    ELSE
+        Log To Console       Sawasdee wan jan
+    END
 
 KTAM Name
     [Arguments]     ${name}
