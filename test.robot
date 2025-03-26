@@ -42,22 +42,22 @@ Create Global Variable
     Set Global Variable     ${GLOBAL_VAR}   "Global Value"
     
 
-Calculate Factorial1
-    [Arguments]    ${number}
-    ${result}    Set Variable    1
-    FOR    ${i}    IN RANGE    ${number}    0    -1   #
-           ${result}    Evaluate    ${result} * ${i}
-    END
-    Return From Keyword     ${result}
+# Calculate Factorial1
+#     [Arguments]    ${number}
+#     ${result}    Set Variable    1
+#     FOR    ${i}    IN RANGE    ${number}    0    -1   #
+#            ${result}    Evaluate    ${result} * ${i}
+#     END
+#     Return From Keyword     ${result}
 
 
-Calculate Factorial 
-    [Arguments]     ${number}
-    ${number}       Convert To Integer    ${number}
-    Run Keyword If  ${number} == 1    Return From Keyword    1
-    ${previous}     Calculate Factorial    ${number - 1}
-    ${result}       Evaluate    ${number}*${previous}
-    Return From Keyword    ${result}
+# Calculate Factorial 
+#     [Arguments]     ${number}
+#     ${number}       Convert To Integer    ${number}
+#     Run Keyword If  ${number} == 1    Return From Keyword    1
+#     ${previous}     Calculate Factorial    ${number - 1}
+#     ${result}       Evaluate    ${number}*${previous}
+#     Return From Keyword    ${result}
 
 
 
@@ -74,12 +74,12 @@ TC01
 
 
 
-    # Create Global Variable
-    # Create Local Variable
-    # Log To Console  ${GLOBAL_VAR}
-    # Log To Console  ${LOCAL_VAR}
-    # ${result}       Calculate Factorial     4
-    # Log To Console      ${result}
+    Create Global Variable
+    Create Local Variable
+    Log To Console  ${GLOBAL_VAR}
+    Log To Console  ${LOCAL_VAR}
+    ${result}       Calculate Factorial     4
+    Log To Console      ${result}
 
 #     Print Username  
     
