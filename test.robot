@@ -42,13 +42,13 @@ Create Global Variable
     Set Global Variable     ${GLOBAL_VAR}   "Global Value"
     
 
-Calculate Factorial1
-    [Arguments]    ${number}
-    ${result}    Set Variable    1
-    FOR    ${i}    IN RANGE    ${number}    0    -1   #
-           ${result}    Evaluate    ${result} * ${i}
-    END
-    Return From Keyword     ${result}
+# Calculate Factorial1
+#     [Arguments]    ${number}
+#     ${result}    Set Variable    1
+#     FOR    ${i}    IN RANGE    ${number}    0    -1   #
+#            ${result}    Evaluate    ${result} * ${i}
+#     END
+#     Return From Keyword     ${result}
 
 
 # Calculate Factorial 
