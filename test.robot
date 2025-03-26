@@ -74,12 +74,14 @@ TC01
 
 
 
-    # Create Global Variable
-    # Create Local Variable
-    # Log To Console  ${GLOBAL_VAR}
-    # Log To Console  ${LOCAL_VAR}
-    # ${result}       Calculate Factorial     4
-    # Log To Console      ${result}
+    Create Global Variable
+    Create Local Variable
+    Log To Console  ${GLOBAL_VAR}
+    Log To Console  TEWWWWWWWWWWWWWWWW
+    ${result}       Calculate Factorial     4
+
+    
+    Log To Console      ${result}
 
 #     Print Username  
     
