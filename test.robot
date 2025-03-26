@@ -51,13 +51,13 @@ Calculate Factorial1
     Return From Keyword     ${result}
 
 
-Calculate Factorial 
-    [Arguments]     ${number}
-    ${number}       Convert To Integer    ${number}
-    Run Keyword If  ${number} == 1    Return From Keyword    1
-    ${previous}     Calculate Factorial    ${number - 1}
-    ${result}       Evaluate    ${number}*${previous}
-    Return From Keyword    ${result}
+# Calculate Factorial 
+#     [Arguments]     ${number}
+#     ${number}       Convert To Integer    ${number}
+#     Run Keyword If  ${number} == 1    Return From Keyword    1
+#     ${previous}     Calculate Factorial    ${number - 1}
+#     ${result}       Evaluate    ${number}*${previous}
+#     Return From Keyword    ${result}
 
 
 
