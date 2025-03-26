@@ -1,110 +1,378 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-21T08:51:44.397316" rpa="false" schemaversion="5">
+<robot generator="Rebot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-26T13:27:55.988131" rpa="false" schemaversion="5">
 <suite id="s1" name="Test 1" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1">
 <suite id="s1-s1" name="Test" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\test.robot">
-<test id="s1-s1-t1" name="TC02" line="22">
+<test id="s1-s1-t1" name="TC01" line="65">
 <kw name="Open Doppee" owner="keyword" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-21T08:51:44.687306" level="INFO">Opening browser 'edge' to base url 'https://training-platform.doppio-tech.com/login'.</msg>
+<msg time="2025-03-26T13:27:40.931343" level="INFO">Opening browser 'edge' to base url 'https://training-platform.doppio-tech.com/login'.</msg>
 <arg>${url}</arg>
 <arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-21T08:51:44.687088" elapsed="2.739511"/>
+<status status="PASS" start="2025-03-26T13:27:40.930188" elapsed="6.200429"/>
 </kw>
 <arg>https://training-platform.doppio-tech.com/login</arg>
-<status status="PASS" start="2025-03-21T08:51:44.686364" elapsed="2.740605"/>
+<status status="PASS" start="2025-03-26T13:27:40.928931" elapsed="6.202138"/>
 </kw>
-<kw name="Input Information" owner="keyword">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-21T08:51:47.435192" level="INFO">Typing text 'Voratew2@gmail.com' into text field '//input[@type="text"]'.</msg>
-<arg>//input[@type="text"]</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-21T08:51:47.434588" elapsed="0.216608"/>
+<kw name="Calculate Factorial">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.134013" level="INFO">${number} = 3</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.133296" elapsed="0.000787"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-21T08:51:47.651743" level="INFO">Typing text 'Doppio123*' into text field '//input[@type="password"]'.</msg>
-<arg>//input[@type="password"]</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-21T08:51:47.651450" elapsed="0.115249"/>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.134340" elapsed="0.000470"/>
 </kw>
-<arg>${email1}</arg>
-<arg>${tc002['password']}</arg>
-<status status="PASS" start="2025-03-21T08:51:47.433234" elapsed="0.333713"/>
+<kw name="Calculate Factorial">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.136837" level="INFO">${number} = 2</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.136463" elapsed="0.000419"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-21T08:51:50.768648" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-21T08:51:47.767825" elapsed="3.000967"/>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.137031" elapsed="0.000280"/>
+</kw>
+<kw name="Calculate Factorial">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.139050" level="INFO">${number} = 1</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.138594" elapsed="0.000496"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.139889" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>1</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.139735" elapsed="0.000293"/>
+</kw>
+<arg>${number} == 1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.139270" elapsed="0.000863"/>
+</kw>
+<kw name="Calculate Factorial">
+<var>${previous}</var>
+<arg>${number - 1}</arg>
+<status status="NOT RUN" start="2025-03-26T13:27:47.140375" elapsed="0.000121"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number}*${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:47.140681" elapsed="0.000085"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:47.140909" elapsed="0.000056"/>
+</kw>
+<msg time="2025-03-26T13:27:47.141200" level="INFO">${previous} = 1</msg>
+<var>${previous}</var>
+<arg>${number - 1}</arg>
+<status status="PASS" start="2025-03-26T13:27:47.137527" elapsed="0.003708"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.142141" level="INFO">${result} = 2</msg>
+<var>${result}</var>
+<arg>${number}*${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.141356" elapsed="0.000847"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.142706" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>${result}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.142441" elapsed="0.000372"/>
+</kw>
+<msg time="2025-03-26T13:27:47.143078" level="INFO">${previous} = 2</msg>
+<var>${previous}</var>
+<arg>${number - 1}</arg>
+<status status="PASS" start="2025-03-26T13:27:47.135047" elapsed="0.008059"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.143761" level="INFO">${result} = 6</msg>
+<var>${result}</var>
+<arg>${number}*${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.143292" elapsed="0.000505"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.144121" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>${result}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.143956" elapsed="0.000241"/>
+</kw>
+<msg time="2025-03-26T13:27:47.144366" level="INFO">${result} = 6</msg>
+<var>${result}</var>
+<arg>3</arg>
+<status status="PASS" start="2025-03-26T13:27:47.131542" elapsed="0.012875"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.144820" elapsed="0.001196"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2025-03-26T13:27:47.146688" level="INFO">${expected} = 6</msg>
+<var>${expected}</var>
+<arg>6</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.146346" elapsed="0.000373"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-03-26T13:27:47.146829" elapsed="0.000194"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-21T08:51:50.769282" elapsed="2.269696"/>
+<status status="PASS" start="2025-03-26T13:27:47.147226" elapsed="4.453136"/>
 </kw>
-<status status="PASS" start="2025-03-21T08:51:44.685640" elapsed="8.353620"/>
+<status status="PASS" start="2025-03-26T13:27:40.927956" elapsed="10.672612"/>
 </test>
-<status status="PASS" start="2025-03-21T08:51:44.433263" elapsed="8.607059"/>
+<test id="s1-s1-t2" name="TC02" line="96">
+<kw name="Open Doppee" owner="keyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-26T13:27:40.932630" level="INFO">Opening browser 'edge' to base url 'https://training-platform.doppio-tech.com/login'.</msg>
+<arg>${url}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.931981" elapsed="7.448926"/>
+</kw>
+<arg>https://training-platform.doppio-tech.com/login</arg>
+<status status="PASS" start="2025-03-26T13:27:40.929538" elapsed="7.451722"/>
+</kw>
+<kw name="Input Information" owner="keyword">
+<msg time="2025-03-26T13:27:48.383017" level="FAIL">Variable '${email1}' not found.</msg>
+<arg>${email1}</arg>
+<arg>${tc002['password']}</arg>
+<status status="FAIL" start="2025-03-26T13:27:48.381872" elapsed="0.001252">Variable '${email1}' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:48.384159" elapsed="0.000168"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-26T13:27:48.384663" elapsed="2.405849"/>
+</kw>
+<tag>openaccount</tag>
+<status status="FAIL" start="2025-03-26T13:27:40.928423" elapsed="9.862214">Variable '${email1}' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-26T13:27:40.436000" elapsed="10.680000"/>
 </suite>
 <suite id="s1-s2" name="Test if" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\Test_if.robot">
 <test id="s1-s2-t1" name="TC01: To Verify Open Doppee Website" line="55">
-<kw name="Reena">
-<if>
-<branch type="IF" condition="'${name}'=='Reena'">
-<if>
-<branch type="IF" condition="'${surname}'=='Baha'">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${number}==5</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.926502" elapsed="0.000561"/>
+</kw>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>${number}==3</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.927312" elapsed="0.000705"/>
+</kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>This is the real Reena</arg>
+<arg>${number}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-03-21T08:51:53.212159" elapsed="0.000081"/>
+<status status="PASS" start="2025-03-26T13:27:40.928202" elapsed="0.000766"/>
 </kw>
-<status status="NOT RUN" start="2025-03-21T08:51:53.211824" elapsed="0.000564"/>
-</branch>
-<branch type="ELSE">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>This is not real Reena</arg>
+<arg>Finish Loop</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-03-21T08:51:53.212542" elapsed="0.000030"/>
+<status status="PASS" start="2025-03-26T13:27:40.929158" elapsed="0.000258"/>
 </kw>
-<status status="NOT RUN" start="2025-03-21T08:51:53.212456" elapsed="0.000162"/>
-</branch>
-<status status="NOT RUN" start="2025-03-21T08:51:53.211804" elapsed="0.000850"/>
-</if>
-<status status="NOT RUN" start="2025-03-21T08:51:53.211537" elapsed="0.001153"/>
-</branch>
-<branch type="ELSE">
+<var name="${number}">1</var>
+<status status="PASS" start="2025-03-26T13:27:40.925074" elapsed="0.004403"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${number}==5</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.929859" elapsed="0.000282"/>
+</kw>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>${number}==3</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.930249" elapsed="0.000230"/>
+</kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>KTAM Baby</arg>
+<arg>${number}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-21T08:51:53.212798" elapsed="0.003232"/>
+<status status="PASS" start="2025-03-26T13:27:40.930582" elapsed="0.001716"/>
 </kw>
-<status status="PASS" start="2025-03-21T08:51:53.212725" elapsed="0.003566"/>
-</branch>
-<status status="PASS" start="2025-03-21T08:51:53.211464" elapsed="0.004954"/>
-</if>
-<arg>Tao</arg>
-<arg>Williams</arg>
-<status status="PASS" start="2025-03-21T08:51:53.210129" elapsed="0.006402"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Finish Loop</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.932579" elapsed="0.000537"/>
 </kw>
-<status status="PASS" start="2025-03-21T08:51:53.207222" elapsed="0.010036"/>
+<var name="${number}">2</var>
+<status status="PASS" start="2025-03-26T13:27:40.929696" elapsed="0.003502"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${number}==5</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.933607" elapsed="0.000338"/>
+</kw>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<msg time="2025-03-26T13:27:40.934323" level="INFO">Continuing for loop from the next iteration.</msg>
+<arg>${number}==3</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.934081" elapsed="0.000448"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${number}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:40.934701" elapsed="0.000668"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Finish Loop</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:40.935550" elapsed="0.000109"/>
+</kw>
+<var name="${number}">3</var>
+<status status="PASS" start="2025-03-26T13:27:40.933383" elapsed="0.002334"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${number}==5</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.936083" elapsed="0.001068"/>
+</kw>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>${number}==3</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.937573" elapsed="0.000589"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${number}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.938339" elapsed="0.000365"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Finish Loop</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.938808" elapsed="0.000166"/>
+</kw>
+<var name="${number}">4</var>
+<status status="PASS" start="2025-03-26T13:27:40.935941" elapsed="0.003084"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-03-26T13:27:40.940072" level="INFO">Exiting for loop altogether.</msg>
+<arg>${number}==5</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.939687" elapsed="0.000492"/>
+</kw>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>${number}==3</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:40.940313" elapsed="0.000071"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${number}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:40.940474" elapsed="0.000047"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Finish Loop</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:40.940599" elapsed="0.000047"/>
+</kw>
+<var name="${number}">5</var>
+<status status="PASS" start="2025-03-26T13:27:40.939352" elapsed="0.001338"/>
+</iter>
+<var>${number}</var>
+<value>1</value>
+<value>10</value>
+<status status="PASS" start="2025-03-26T13:27:40.924212" elapsed="0.016545"/>
+</for>
+<status status="PASS" start="2025-03-26T13:27:40.923695" elapsed="0.017396"/>
 </test>
-<status status="PASS" start="2025-03-21T08:51:53.041256" elapsed="0.182175"/>
+<status status="PASS" start="2025-03-26T13:27:40.396290" elapsed="0.546084"/>
 </suite>
-<status status="PASS" start="2025-03-21T08:51:44.399828" elapsed="8.839431"/>
+<suite id="s1-s3" name="Test teardown" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\Test_teardown.robot">
+<test id="s1-s3-t1" name="TC01:Test Case With Teardown" line="14">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.914750" elapsed="0.001023"/>
+</kw>
+<kw name="Keyword With Teardown">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the keyword</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.916744" elapsed="0.000329"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Keyword Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.917283" elapsed="0.000173"/>
+</kw>
+<status status="PASS" start="2025-03-26T13:27:40.916247" elapsed="0.001290"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Test Case Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.917726" elapsed="0.000171"/>
+</kw>
+<status status="PASS" start="2025-03-26T13:27:40.913437" elapsed="0.004520"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Suite Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.918825" elapsed="0.000273"/>
+</kw>
+<status status="PASS" start="2025-03-26T13:27:40.337050" elapsed="0.582116"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 4 executions.</doc>
+<status status="FAIL" start="2025-03-26T13:27:40.313000" elapsed="10.786000"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">openaccount</stat>
 </tag>
 <suite>
-<stat name="Test 1" id="s1" pass="2" fail="0" skip="0">Test 1</stat>
-<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Test 1.Test</stat>
+<stat name="Test 1" id="s1" pass="3" fail="1" skip="0">Test 1</stat>
+<stat name="Test" id="s1-s1" pass="1" fail="1" skip="0">Test 1.Test</stat>
 <stat name="Test if" id="s1-s2" pass="1" fail="0" skip="0">Test 1.Test if</stat>
+<stat name="Test teardown" id="s1-s3" pass="1" fail="0" skip="0">Test 1.Test teardown</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-03-26T13:27:40.918740" level="ERROR">Error in file 'C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\Test_if.robot' on line 3: Importing library 'DebugLibrary' failed: ModuleNotFoundError: No module named 'DebugLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
 </errors>
 </robot>

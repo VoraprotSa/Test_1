@@ -1,0 +1,26 @@
+==============================================================================
+Test 1                                                                        
+==============================================================================
+Test 1.Test                                                                   
+==============================================================================
+TC02                                                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\test.robot:96
+    T:  TC02    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\test.robot:98
+      Input Information    ${email1}    ${tc002['password']}
+      |  ${email1} = <Unable to define variable value>
+      |  ${tc002['password']} = Doppio123* (str)
+______________________________________________________________________________
+| FAIL |
+Variable '${email1}' not found.
+------------------------------------------------------------------------------
+Test 1.Test                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Test 1                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\pabot_results\1\output.xml

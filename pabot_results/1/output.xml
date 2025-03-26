@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-26T13:27:40.373089" rpa="false" schemaversion="5">
+<suite id="s1" name="Test 1" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1">
+<suite id="s1-s1" name="Test" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\test.robot">
+<test id="s1-s1-t1" name="TC02" line="96">
+<kw name="Open Doppee" owner="keyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-26T13:27:40.932630" level="INFO">Opening browser 'edge' to base url 'https://training-platform.doppio-tech.com/login'.</msg>
+<arg>${url}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.931981" elapsed="7.448926"/>
+</kw>
+<arg>https://training-platform.doppio-tech.com/login</arg>
+<status status="PASS" start="2025-03-26T13:27:40.929538" elapsed="7.451722"/>
+</kw>
+<kw name="Input Information" owner="keyword">
+<msg time="2025-03-26T13:27:48.383017" level="FAIL">Variable '${email1}' not found.</msg>
+<arg>${email1}</arg>
+<arg>${tc002['password']}</arg>
+<status status="FAIL" start="2025-03-26T13:27:48.381872" elapsed="0.001252">Variable '${email1}' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-26T13:27:48.384159" elapsed="0.000168"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-26T13:27:48.384663" elapsed="2.405849"/>
+</kw>
+<tag>openaccount</tag>
+<status status="FAIL" start="2025-03-26T13:27:40.928423" elapsed="9.862214">Variable '${email1}' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-26T13:27:40.436264" elapsed="10.355200"/>
+</suite>
+<status status="FAIL" start="2025-03-26T13:27:40.421228" elapsed="10.370699"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">openaccount</stat>
+</tag>
+<suite>
+<stat name="Test 1" id="s1" pass="0" fail="1" skip="0">Test 1</stat>
+<stat name="Test" id="s1-s1" pass="0" fail="1" skip="0">Test 1.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

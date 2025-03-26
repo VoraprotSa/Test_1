@@ -47,10 +47,20 @@ Reena
             Log To Console      This is not real Reena
         END
     ELSE
-        Log To Console          KTAM Baby
+        Log To Console          KTAM Baby name ${name}
     END
 
 
 ***Test Cases***
 TC01: To Verify Open Doppee Website
-    Reena   Tao     Williams
+    # Reena   Tao     Williams
+    
+
+
+
+    FOR    ${number}    IN RANGE    1    10
+        Exit For Loop If    ${number}==5
+        Continue For Loop If    ${number}==3
+        Log To Console    ${number}
+        Log To Console    Finish Loop
+    END

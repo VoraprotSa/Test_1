@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-26T13:27:40.277438" rpa="false" schemaversion="5">
+<suite id="s1" name="Test 1" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1">
+<suite id="s1-s1" name="Test teardown" source="C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\Test_teardown.robot">
+<test id="s1-s1-t1" name="TC01:Test Case With Teardown" line="14">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.914750" elapsed="0.001023"/>
+</kw>
+<kw name="Keyword With Teardown">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the keyword</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.916744" elapsed="0.000329"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Keyword Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.917283" elapsed="0.000173"/>
+</kw>
+<status status="PASS" start="2025-03-26T13:27:40.916247" elapsed="0.001290"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Test Case Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.917726" elapsed="0.000171"/>
+</kw>
+<status status="PASS" start="2025-03-26T13:27:40.913437" elapsed="0.004520"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Suite Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-26T13:27:40.918825" elapsed="0.000273"/>
+</kw>
+<status status="PASS" start="2025-03-26T13:27:40.337050" elapsed="0.582116"/>
+</suite>
+<status status="PASS" start="2025-03-26T13:27:40.313820" elapsed="0.605949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test 1" id="s1" pass="1" fail="0" skip="0">Test 1</stat>
+<stat name="Test teardown" id="s1-s1" pass="1" fail="0" skip="0">Test 1.Test teardown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

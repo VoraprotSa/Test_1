@@ -1,0 +1,10 @@
+[ ERROR ] Error in file 'C:\Users\voraprot.s\OneDrive - doppiotech.com\Desktop\Automate2025\Test_1\Test_if.robot' on line 3: Importing library 'DebugLibrary' failed: ModuleNotFoundError: No module named 'DebugLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313
+  C:\Users\voraprot.s\AppData\Local\Programs\Python\Python313\Lib\site-packages
